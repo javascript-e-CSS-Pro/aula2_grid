@@ -1,0 +1,74 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "aside principal"
+    "rodape rodape";
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5px;
+    gap: 2px;
+    background-color: #edb5bd;
+    }
+
+
+header {
+    border: solid red 2px;
+    padding: 10px;
+    text-align: center;
+    grid-area: cabecalho;
+    background-color: grey;
+}
+
+aside {
+    border: solid blue 2px;
+    padding: 10px;
+    text-align: center;
+    grid-area: aside;
+    
+}
+
+main {
+    border: solid orange 2px;
+    text-align: center;
+    grid-area: principal;
+}
+
+footer {
+    border: solid green 2px;
+    padding: 10px;
+    text-align: center;
+    grid-area: rodape;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.flex-linha {
+   
+    display: flex;
+    flex-direction: row;
+    background-color: #ABCFF0;
+    padding: 5px;
+    flex-grow: 1;
+    gap: 5px;
+    
+}
+
+
+.artigo {
+    padding: 10px;
+    background-color: #A3DFD9;
+    flex-grow: 1;
+}
